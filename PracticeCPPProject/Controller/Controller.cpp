@@ -8,6 +8,7 @@
 
 #include "Controller.hpp"
 #include <vector>
+#include <iostream>
 
 using namespace std;
 
@@ -18,21 +19,17 @@ Controller :: Controller()
 
 void Controller :: start()
 {
-    vectorPractice();
-}
-
-void vectorPractice()
-{
-    vector <int> numbers (10);
+    //vectorPractice();
+    vector <int> numbers;
     
-    vector <string> words(3);
-    
-    for(int i = 0; i < numbers.size(); i++)
+    for(int i = 0; i < 10; i++)
     {
         numbers.push_back(i);
         
         cout << numbers.at(i) << endl;
     }
+    
+    vector <string> words(3);
     
     words.push_back("a");
     words.push_back("b");
@@ -42,4 +39,27 @@ void vectorPractice()
     {
         cout << words.at(i) << endl;
     }
+}
+
+void vectorPractice()
+{
+//    vector <int> numbers (10);
+//
+//    for(int i = 0; i < numbers.size(); i++)
+//    {
+//        numbers.push_back(i);
+//
+//        cout << numbers.at(i) << endl;
+//    }
+//
+//    vector <string> words(3);
+//
+//    words.push_back("a");
+//    words.push_back("b");
+//    words.push_back("c");
+//
+//    for(int i = 0; i < words.size(); i++)
+//    {
+//        cout << words.at(i) << endl;
+//    }
 }
