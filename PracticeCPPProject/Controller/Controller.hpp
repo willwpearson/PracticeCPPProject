@@ -20,6 +20,6 @@ protected:
 public:
     Controller();
     void start();
-}
+};
 
 #endif /* Controller_hpp */
